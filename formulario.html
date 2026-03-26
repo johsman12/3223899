@@ -4,70 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-    <h3>Formulario de Registro Deportivo</h3>
 
-    <form>
+<body>
+
+<div class="contenedor-formulario">
+
+    <div class="formulario">
+        <h3>Formulario de Registro Deportivo</h3>
+
+        <form>
 
         <h4>Datos Personales</h4>
 
-        <label>Nombre completo:</label><br>
-        <input type="text" name="nombre" required><br><br>
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre" required>
 
-        <label>Tipo de identificación:</label><br>
+        <label>Tipo de identificación:</label>
         <select name="tipo_id">
             <option>Cédula</option>
             <option>Pasaporte</option>
             <option>Tarjeta de identidad</option>
-        </select><br><br>
+        </select>
 
-        <label>Número de identificación:</label><br>
-        <input type="number" name="identificacion"><br><br>
+        <label>Número de identificación:</label>
+        <input type="number" name="identificacion">
 
-        <label>Correo electronico:</label><br>
-        <input type="email" name="correo"><br><br>
+        <label>Correo electronico:</label>
+        <input type="email" name="correo">
 
-        <label>Número de telefono:</label><br>
-        <input type="tel" name="telefono"><br><br>
+        <label>Número de telefono:</label>
+        <input type="tel" name="telefono">
 
-        <label>Direccion:</label><br>
-        <input type="text" name="direccion"><br><br>
+        <label>Direccion:</label>
+        <input type="text" name="direccion">
 
-        <label>Fecha de nacimiento:</label><br>
-        <input type="date" name="fecha"><br><br>
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="fecha">
 
-        <label>Edad:</label><br>
-        <input type="number" name="edad"><br><br>
+        <label>Edad:</label>
+        <input type="number" name="edad">
 
         <hr>
 
         <h4>Genero</h4>
 
-        <input type="radio" name="genero"> Masculino<br>
-        <input type="radio" name="genero"> Femenino<br>
-        <input type="radio" name="genero"> Otro<br><br>
+        <div class="opciones">
+            <label><input type="radio" name="genero"> Masculino</label>
+            <label><input type="radio" name="genero"> Femenino</label>
+            <label><input type="radio" name="genero"> Otro</label>
+        </div>
 
         <h4>Deportes de interés</h4>
 
-        <input type="checkbox"> Futbol<br>
-        <input type="checkbox"> Baloncesto<br>
-        <input type="checkbox"> Tenis<br>
-        <input type="checkbox"> Atletismo<br><br>
+        <div class="opciones">
+            <label><input type="checkbox"> Futbol</label>
+            <label><input type="checkbox"> Baloncesto</label>
+            <label><input type="checkbox"> Tenis</label>
+            <label><input type="checkbox"> Atletismo</label>
+        </div>
 
-        <label>Nivel deportivo:</label><br>
+        <label>Nivel deportivo:</label>
         <select name="nivel">
             <option>Recreativo</option>
             <option>Semiprofesional</option>
             <option>Profesional</option>
-        </select><br><br>
+        </select>
 
         <h4>Comentarios</h4>
 
-        <textarea rows="5" placeholder="Escribe aquí tus comentarios..."></textarea><br><br>
+        <textarea rows="5" placeholder="Escribe aquí tus comentarios..."></textarea>
 
         <input type="submit" value="Registrarse">
+
         </form>
     </div>
 

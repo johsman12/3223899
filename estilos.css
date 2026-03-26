@@ -3,14 +3,12 @@ body {
     margin: 0;
     background-color: #f4f4f4;
 }
-
 header {
     background-color: #2c3e50;
     color: white;
     padding: 20px;
     text-align: center;
 }
-
 nav {
     background-color: #34495e;
     padding: 10px;
@@ -22,7 +20,6 @@ nav a {
     text-decoration: none;
     margin: 10px;
 }
-
 section {
     padding: 20px;
 }
@@ -32,14 +29,12 @@ article {
     padding: 15px;
     margin-bottom: 20px;
 }
-
 img {
     width: 100%;
     max-width: 400px;
     display: block;
     margin: 10px auto;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -50,26 +45,21 @@ th, td {
     padding: 8px;
     text-align: center;
 }
-
 footer {
     background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 10px;
 }
-
-
-
 .contenedor {
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 40px;
     margin-top: 40px;
 }
 
-
-.inicio-sesion, .formulario-registro {
+.inicio-sesion {
     background: white;
     width: 400px;
     padding: 20px;
@@ -77,32 +67,52 @@ footer {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-
 .inicio-sesion h1 {
     color: darkblue;
 }
 
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
 
-input, select, textarea {
-    width: 90%;
+.formulario {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
     padding: 8px;
     margin-top: 5px;
 }
 
 
+.opciones label {
+    display: block;
+    margin-top: 5px;
+}
 input[type="submit"] {
     background-color: darkblue;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 10px;
 }
 
 input[type="submit"]:hover {
     background-color: #1a252f;
 }
-
-
-.formulario-registro h3 {
-    margin-top: 0;
-}
-
