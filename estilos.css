@@ -57,13 +57,17 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+
+
 .contenedor {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: flex-start; 
+    gap: 40px;
     margin-top: 40px;
-    flex-wrap: wrap;
 }
+
 
 .inicio-sesion, .formulario-registro {
     background: white;
@@ -73,15 +77,18 @@ footer {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+
 .inicio-sesion h1 {
     color: darkblue;
 }
+
 
 input, select, textarea {
     width: 90%;
     padding: 8px;
     margin-top: 5px;
 }
+
 
 input[type="submit"] {
     background-color: darkblue;
@@ -92,5 +99,10 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #1a252f;
+}
+
+
+.formulario-registro h3 {
+    margin-top: 0;
 }
 
